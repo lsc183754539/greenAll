@@ -7,16 +7,17 @@
 # @Software: PyCharm
 
 import os
+import datetime
 
 pushtoday = []
-print(os.times())
+today = datetime.date.today()
+print(today)
 for i in range(1000):
-    pushtoday.append("pushtody ")
+    pushtoday.append("pushtody " + str(today))
 print(pushtoday)
 with open("push.txt", "w", encoding="utf-8") as wp:
     for i in range(1000):
         wp.write(pushtoday[i])
-os.system("git add ./*")
-os.system("git commit ./*")
+os.system("git add ./push.txt")
 os.system("git commit -m 'todayisgreen'")
 os.system("git push origin master")
