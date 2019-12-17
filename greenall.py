@@ -9,12 +9,14 @@
 import os
 
 pushtoday = []
+print(os.times())
 for i in range(1000):
     pushtoday.append("pushtody ")
 print(pushtoday)
 with open("push.txt", "w", encoding="utf-8") as wp:
     for i in range(1000):
         wp.write(pushtoday[i])
-os.system("git add ./push.txt")
+os.system("git add ./*")
+os.system("git commit ./*")
 os.system("git commit -m 'todayisgreen'")
 os.system("git push origin master")
