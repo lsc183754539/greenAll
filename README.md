@@ -1,4 +1,4 @@
-# greenAllGithubPush
+# greenAllGithubPush![](https://img.shields.io/badge/Issues%20closed%20in-about%2012%20hours-green)
 每天使GitHub上传记录变绿，下次朋友圈秀年终报告好看点    
 <hr/>    
 
