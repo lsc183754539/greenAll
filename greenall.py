@@ -12,7 +12,7 @@ import datetime
 pushtoday = []
 today = datetime.date.today()
 print(today)
-for i in range(1000):
+for i in range(3000):
     pushtoday.append("pushtody" + str(today))
 with open("push.txt", "w", encoding="utf-8") as wp:
     for i in range(1000):
