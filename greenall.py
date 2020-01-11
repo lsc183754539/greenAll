@@ -19,6 +19,6 @@ with open("push.txt", "w", encoding="utf-8") as wp:
         wp.write(pushtoday[i])
         if i % 3 == 0:
             wp.write("\n")
-os.system("git add ./push.txt")
-os.system("git commit -m 'todayisgreen'")
+os.system("git add /root/greeAll/push.txt")
+os.system("git commit -m '"+ str(today) + "'")
 os.system("git push origin master")
