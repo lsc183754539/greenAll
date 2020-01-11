@@ -12,12 +12,12 @@ import datetime
 pushtoday = []
 today = datetime.date.today()
 print(today)
-for i in range(3000):
+for i in range(9999):
     pushtoday.append("pushtody" + str(today))
 with open("push.txt", "w", encoding="utf-8") as wp:
-    for i in range(3000):
+    for i in range(9999):
         wp.write(pushtoday[i])
-        if i % 10 == 0:
+        if i % 3 == 0:
             wp.write("\n")
 os.system("git add ./push.txt")
 os.system("git commit -m 'todayisgreen'")
